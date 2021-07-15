@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
+  <style>
+    body, html {width: 100%; height: 100%; margin: 0; padding: 0}
+    .row-container {display: flex; width: 100%; height: 100%; flex-direction: column; background-color: blue; overflow: hidden;}
+    .first-row {background-color: lime; }
+    .second-row { flex-grow: 1; border: none; margin: 0; padding: 0; }
+  </style>
   <body>
     <h1>Hello World</h1>
     <p>I'm hosted with GitHub Pages.</p>
-    <iframe frameborder="0" scrolling="no"
-            width="640" height="480"
-            src="https://drive.google.com/file/d/./Pichkaari Doc.pdf/preview">
-  </iframe>
+    <div class="row-container">
+      <div class="first-row">
+        <p>Some text</p>
+        <p>And some more text</p>
+      </div>
+      <iframe src="./Pichkaari Doc.pdf" class="second-row"></iframe>
+    </div>
   </body>
 </html>
